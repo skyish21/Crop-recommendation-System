@@ -1,10 +1,10 @@
 # streamlit_app.py
 import streamlit as st
 import numpy as np
-import pickle
+import joblib
 
 # Load the trained model
-model = pickle.load(open('naive_bayes_crs.pkl', 'rb'))
+model = joblib.load(open('naive_bayes_crs.pkl', 'rb'))
 
 # Label mapping
 label_dict = {
