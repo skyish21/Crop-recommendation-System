@@ -35,4 +35,4 @@ if st.button("Recommend Crop"):
     input_data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
     prediction = model.predict(input_data)[0]
     crop_name = inv_label_dict.get(prediction, f"Unknown crop with label {prediction}")
-    st.success(f"🌱 Recommended Crop: **{crop_name.capitalize()}**")
+    st.success(f"🌱 Best Crop to be grown: **{crop_name.capitalize()}**")
