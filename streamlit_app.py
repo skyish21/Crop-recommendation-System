@@ -23,4 +23,6 @@ if st.button("Predict Crop"):
     input_data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
     input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)
-    st.success(f"✅ Recommended Crop: **{prediction[0].capitalize()}**")
+    predicted_crop = str(prediction[0])
+    st.success(f"✅ Best Crop to be grown: **{predicted_crop.capitalize()}**")
+
