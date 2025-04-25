@@ -4,7 +4,7 @@ import joblib
 
 # Load the saved scaler and model separately
 scaler = joblib.load('crop_scaler.pkl')
-model = joblib.load('rf_crs_model.pkl')
+model = joblib.load('rf_crs.pkl')
 
 # Label mapping
 label_dict = {
