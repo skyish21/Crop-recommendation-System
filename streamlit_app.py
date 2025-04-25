@@ -4,7 +4,7 @@ import joblib
 
 # Load the saved scaler and model
 scaler = joblib.load('crop_scaler.pkl')
-model = joblib.load('rf_crs.pkl')
+model = joblib.load('svm_crs.pkl')
 
 # The correct mapping based on model.classes_
 # This maps the model's internal indices to the actual crop names
